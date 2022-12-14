@@ -10,6 +10,7 @@ packages = [{include = "grid_walker"}]
 python = "^3.8"
 numpy = "^1.23.5"
 pynput = "^1.7.6"
+rich = "^12.6.0"
 
 
 [build-system]
