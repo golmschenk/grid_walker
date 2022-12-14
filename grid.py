@@ -12,8 +12,8 @@ class GridWalker:
         self.height: int = 15
         self.x: int = self.width // 2
         self.y: int = self.height // 2
-        self.portal_symbol = '@'
-        self.player_symbol = '&'
+        self.portal_symbol = '&'
+        self.player_symbol = '@'
         self.explored_symbol = '.'
         self.unexplored_symbol = '#'
         self.explored_count = 0
