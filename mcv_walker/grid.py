@@ -27,15 +27,15 @@ class GridWalker:
                 background_color = 'grey'
                 foreground_color = 'black'
                 character = cell
-                if row_index == self.player_y and column_index == self.player_x:
-                    foreground_color = 'orange_red1'
-                    character = self.player_symbol
                 if character == self.portal_symbol:
                     background_color = 'purple'
                 elif character == '1':
                     background_color = 'red'
                 elif character != self.unexplored_symbol:
                     background_color = 'green'
+                if row_index == self.player_y and column_index == self.player_x:
+                    foreground_color = 'orange_red1'
+                    character = self.player_symbol
                 cell_display_string = f'[{foreground_color} on {background_color}]{character}[/]'
                 display_string += cell_display_string
             display_string += '\n'
