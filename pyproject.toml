@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "grid-walker"
+name = "mcv_walker"
 version = "0.1.0"
 description = ""
 authors = ["Greg Olmschenk <greg@olmschenk.com>"]
 readme = "README.md"
-packages = [{include = "grid_walker"}]
+packages = [{include = "mcv_walker"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -12,8 +12,9 @@ numpy = "^1.23.5"
 pynput = "^1.7.6"
 rich = "^12.6.0"
 
+[tool.poetry.scripts]
+my-script = "mcv_walker.main:main"
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
-
