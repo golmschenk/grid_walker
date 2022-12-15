@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mcv_walker"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["Greg Olmschenk <greg@olmschenk.com>"]
 readme = "README.md"
@@ -13,7 +13,7 @@ pynput = "^1.7.6"
 rich = "^12.6.0"
 
 [tool.poetry.scripts]
-my-script = "mcv_walker.main:main"
+mcv_walker = "mcv_walker.main:main"
 
 [build-system]
 requires = ["poetry-core"]
