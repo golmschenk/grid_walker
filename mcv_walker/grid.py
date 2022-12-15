@@ -39,6 +39,7 @@ class GridWalker:
                 cell_display_string = f'[{foreground_color} on {background_color}]{character}[/]'
                 display_string += cell_display_string
             display_string += '\n'
+        os.system('cls' if os.name == 'nt' else 'clear')
         print(display_string)
 
     def move_and_print(self, direction: Direction):
