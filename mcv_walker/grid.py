@@ -3,7 +3,7 @@ import os
 import numpy as np
 from rich import print
 
-from direction import Direction
+from mcv_walker.direction import Direction
 
 
 class GridWalker:

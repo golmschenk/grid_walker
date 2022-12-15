@@ -1,8 +1,8 @@
 from pynput.keyboard import Key, Events
 
-from grid import GridWalker, Direction
 from pynput import keyboard
 
+from mcv_walker.grid import GridWalker, Direction
 
 def main():
     grid_walker = GridWalker()
