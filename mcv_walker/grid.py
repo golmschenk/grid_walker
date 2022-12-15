@@ -21,7 +21,7 @@ class GridWalker:
         self.explored_grid[self.player_y, self.player_x] = self.portal_symbol
 
     def print_grid(self):
-        os.system('cls' if os.name == 'nt' else 'clear')
+        display_string = ''
         for row_index, row in enumerate(self.explored_grid):
             for column_index, cell in enumerate(row):
                 background_color = 'grey'
@@ -37,8 +37,9 @@ class GridWalker:
                 elif character != self.unexplored_symbol:
                     background_color = 'green'
                 cell_display_string = f'[{foreground_color} on {background_color}]{character}[/]'
-                print(cell_display_string, end='')
-            print('')
+                display_string += cell_display_string
+            display_string += '\n'
+        print(display_string)
 
     def move_and_print(self, direction: Direction):
         if direction == Direction.UP:
