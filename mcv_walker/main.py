@@ -21,6 +21,10 @@ def main():
                     grid_walker.move_and_print(Direction.LEFT)
                 elif event.key == Key.right:
                     grid_walker.move_and_print(Direction.RIGHT)
+                elif event.key == Key.home:
+                    grid_walker.undo()
+                elif event.key == Key.end:
+                    grid_walker.reset()
 
 
 if __name__ == '__main__':
