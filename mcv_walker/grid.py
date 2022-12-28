@@ -11,8 +11,8 @@ from mcv_walker.grid_state import GridState
 
 class GridWalker:
     def __init__(self):
-        self.width: int = 15
-        self.height: int = 15
+        self.width: int = 25
+        self.height: int = 25
         self.portal_symbol = '&'
         self.player_symbol = '@'
         self.explored_overflow_symbol = '.'
