@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "mcv_walker"
-version = "0.1.7"
+version = "0.1.8"
 description = ""
 authors = ["Greg Olmschenk <greg@olmschenk.com>"]
 readme = "README.md"
