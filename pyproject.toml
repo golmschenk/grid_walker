@@ -10,8 +10,7 @@ packages = [{include = "mcv_walker"}]
 python = "^3.8"
 numpy = "^1.23.5"
 pynput = "^1.7.6"
-rich = "^12.6.0"
-pyqt6 = "^6.4.0"
+rich = "^13.3.1"
 
 [tool.poetry.scripts]
 mcv_walker = "mcv_walker.main:main"
